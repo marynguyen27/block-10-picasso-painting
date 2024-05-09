@@ -1,7 +1,5 @@
 .formsubmission {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: large;
-  color: blueviolet;
+  font: italic bold 0.8em/1.2 Arial, sans-serif;
 }
 
 .formtext {
@@ -30,11 +28,10 @@
 }
 
 .purpledot {
-  height: 50px;
-  width: 50px;
+  height: 10vw;
+  width: 10vw;
   background-color: purple;
   border-radius: 50%;
-  position: fixed;
   bottom: 100;
   left: 100;
 }
@@ -43,10 +40,10 @@
 
 .flexbox-div {
   display: flex; /*takes all elements inside that box or container, and displays them horizontally side by side */
-  border: 5px solid purple;
   padding: 2%;
   justify-content: space-evenly; /* tells you how to position the divs*/
   align-items: center;
+  border: 1px dashed #000;
 }
 
 label {
@@ -57,4 +54,41 @@ div {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.layered-boxes {
+  position: relative;
+}
+
+.green-box {
+  position: absolute;
+  z-index: 2;
+  background: green;
+  width 25%;
+  left: 75%;
+  top: -25px;
+  height: 7em;
+  opacity: 0.9;
+  border: 1px dotted #010101
+}
+
+.yellow-box {
+  position: absolute;
+  z-index: 3;
+  background: yellow;
+  width: 80%;
+  left: 60px;
+  top: 3em;
+  border: 5px dotted #0005
+}
+
+@media (min-width: 320px) {
+
+.flexbox-div {
+    flex-direction: row;
+  }
+
+
+.box:nth-child(2n + 1) {
+  background-color: pink;
 }
