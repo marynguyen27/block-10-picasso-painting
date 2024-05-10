@@ -82,6 +82,59 @@ div {
   border: 5px dotted #0005
 }
 
+body {
+  display: flex;
+  flex-direction: column; /*horizontally*/
+  align-items: center; /*vertical*/
+}
+
+div {
+  border: 1px solid rgb(112, 169, 207);
+  height: 20vh;
+  width: 31%;
+  background-color: rgb(112, 169, 207);
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  margin-bottom: 2%;
+}
+
+.big-box {
+  width: 90vw;
+  height: 40vh;
+  background-color: rgb(112, 169, 207);
+}
+
+.green {
+  margin-top: 2%;
+  background-color: rgb(61, 124, 61);
+  width: 90vw;
+  height: 2vh;
+}
+
+.circle {
+  border-radius: 50%;
+  position: absolute;
+}
+
+.small {
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.large {
+  height: 3em;
+  width: 3em;
+}
+
+#first {
+  background-color: yellow;
+  top:0;
+}
+
 @media (min-width: 320px) {
 
 .flexbox-div {
